@@ -27,7 +27,7 @@ def plot_trip(trip: Trip, projection = 'robin', line_width=2, colour='b') -> Non
     coordinates = [0, 0, 0, 0] #longitude1, longitude2, latitude1, latitude2
     coordinates[0] = min(max_distance_countries[1].longitude,max_distance_countries[2].longitude) - 5
     coordinates[1] = max(max_distance_countries[1].longitude,max_distance_countries[2].longitude) + 5
-    coordinates[2] = min(max_distance_countries[1].latitude, max_distance_countries[2].latitude)
+    coordinates[2] = min(max_distance_countries[1].latitude, max_distance_countries[2].latitude) - 5
 
     # setup Lambert Conformal basemap.
     m = Basemap()
